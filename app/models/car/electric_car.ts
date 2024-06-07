@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const { commonAttributes } = require("@/app/models/car/commonattributes");
 
-//Define the EngineCar schema
+//Define the Electric Car schema
 
 const electricCareScheam = new mongoose.Schema({
   ...commonAttributes,
