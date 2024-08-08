@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "@/public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const NavBar = () => {
   return (
@@ -12,8 +13,14 @@ const NavBar = () => {
         <Link href="/">
           <Image src={Logo} alt="Logo" width={70} height={70} />
         </Link>
-        <div>search</div>
-        <div>Right Side menu</div>
+        <div className="hidden lg:flex">search</div>
+        <div className="hidden md:flex gap-5 items-center">
+          <Link href="/partners/home">
+            <Button variant="ghost">Post a Car</Button>
+          </Link>
+          <div>localization</div>
+          <div>menu</div>
+        </div>
       </div>
     </div>
   );
