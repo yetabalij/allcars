@@ -1,19 +1,16 @@
 "use client";
 
 import React from "react";
-import Logo from "@/public/logo.png";
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Plus } from "lucide-react";
+import Logo from "./Logo";
 
 const NavBar = () => {
   return (
     <div className="border-b shadow">
       <div className="flex justify-between text-center items-center py-4 w-[94%] mx-auto">
-        <Link href="/">
-          <Image src={Logo} alt="Logo" width={70} height={70} />
-        </Link>
+        <Logo />
         <div className="hidden lg:flex">search</div>
         <div className="hidden md:flex gap-5 items-center">
           <Link href="/partners/home">
