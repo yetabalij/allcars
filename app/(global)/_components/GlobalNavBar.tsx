@@ -2,11 +2,11 @@
 
 import React from "react";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../../../components/ui/button";
 import { Plus } from "lucide-react";
-import Logo from "./Logo";
+import Logo from "../../../components/Logo";
 
-const NavBar = () => {
+const GlobalNavBar = () => {
   return (
     <div className="border-b shadow">
       <div className="flex justify-between text-center items-center py-4 w-[94%] mx-auto">
@@ -29,4 +29,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default GlobalNavBar;
